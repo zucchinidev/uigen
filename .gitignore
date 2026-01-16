@@ -49,3 +49,9 @@ next-env.d.ts
 # database
 /prisma/dev.db
 /prisma/dev.db-journal
+
+# IDE
+.idea
+
+# MCP Playwright: open a Browser
+.playwright-mcp
