@@ -70,3 +70,13 @@ Reference `prisma/schema.prisma` anytime you need to understand the data structu
 
 - Use conventional commits based on domain (e.g., `feat(auth):`, `fix(preview):`, `refactor(file-system):`)
 - Never mention Claude Code or authors in commit messages
+
+## GitHub Actions Environment
+
+When running in GitHub Actions (via claude-code-action):
+
+- The project is already set up with all dependencies installed
+- The dev server is running at `localhost:3000`
+- Server logs are written to `logs.txt` (use `cat logs.txt` or `tail logs.txt` to view)
+- Use `sqlite3` CLI to query the database if needed
+- Use Playwright MCP tools (`mcp__playwright__*`) to launch a browser and interact with the app
